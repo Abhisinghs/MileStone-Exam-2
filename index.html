@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pw Skills Blog</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://kit.fontawesome.com/e5a8c01b5e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- <img src="https://cdn.pixabay.com/photo/2023/07/21/06/15/bird-8140883_1280.png" alt=""> -->
+    <header id="back">
+      <h1>Pw Skills Blog</h1>
+      <button id="addBlogButton">+</button>
+      <div id="home">
+        <a href="index.html">Home</a>
+      </div>
+
+    </header>
+  
+    <main id="mainContent">
+      <!-- Blogs will be added here dynamically -->
+    </main>
+  
+  
+    <!-- Add Blog Modal -->
+    <div id="addBlogModal" class="modal">
+      <div class="modal-content">
+        <span id="close-button">&times;</span>
+        <form id="addBlogForm">
+          <img src="" alt="" srcset="">
+          <label for="postUrl">
+            <input type="text" id="postUrl" placeholder="Enter Blog Post URL :" required>
+          </label>
+
+          <label for="title">
+            <input type="text" id="title" placeholder="Enter Blog Title : " required>
+          </label>
+          
+          <label for="description">
+            <input id="description" placeholder="Etner Blog Description :" required>
+          </label>
+  
+          <label for="content">
+            <textarea id="content" rows="10" cols="70" placeholder="Write :" required></textarea>
+          </label>
+  
+          <input type="submit" value="Add Blog" id="addBlog">
+        </form>
+      </div>
+    </div>
+  
+    <script src="script.js"></script>
+  </body>
+</html>
