@@ -33,7 +33,9 @@ function viewBlog(index) {
   const blogContent = `
     <div class="blog-card1">
     <div class="upper">
-      <h2>${blog.title}</h2>
+    <div class="left"><h2>${blog.title}</h2><p>${blog.description}</p>
+    </div>
+      
       <img src="${blog.postUrl}" alt="blog Image">
     </div>
       <p>${blog.content}</p>
@@ -87,3 +89,12 @@ if (storedBlogs) {
   blogs = JSON.parse(storedBlogs);
   displayBlogs();
 }
+
+
+//Add Resriction feature to the content id
+//Don't allow to copy paste in content div
+
+const content=document.getElementById('content');
+
+//add event listener
+content.addEventListener('paste',(e)=> e.preventDefault());
